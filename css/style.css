@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.background-main {    
+    background: linear-gradient(90deg, rgb(5, 156, 0) 0%, rgb(138, 207, 10) 35%, rgba(0,212,255,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+}
+
+/* Página sobreposta */
+
+/*================ Modal ================*/
+.modal-overlay {
+    width: 100%;
+    height: 100%;  
+
+    background-color: rgba(0,0,0, 0.7);
+
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999;
+}
+
+ .modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background: #f0f2f5;
+    padding: 2.4rem; 
+    width: 90vw;
+    height: 90vh;
+    position: relative;
+    padding: 3rem;
+    z-index: 1;
+    background: linear-gradient(90deg, rgb(5, 156, 0) 0%, rgb(138, 207, 10) 35%, rgba(0,212,255,1) 100%);
+    border: 5px solid  #f80303;
+    border-radius: 50px;
+    box-shadow: 
+        rgba(246, 6, 6, .8) 5px 5px, 
+        rgba(246, 6, 6, .6) 10px 10px, 
+        rgba(246, 6, 6, .4) 15px 15px, 
+        rgba(246, 6, 6, .2) 20px 20px, 
+        rgba(246, 6, 6, .1) 25px 25px;
+} 
+
+div ul li {
+    font-size: 30px;
+    text-align: center;
+    list-style: none;
+}
+
+.solution {
+    font-size: 35px;
+    background-color: rgba(246, 6, 6, .8);
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 2rem 0;
+    text-align: center;    
+}
+
+div h3{
+    font-size: 30px;
+    color: white;
+    /* background-color: black; */
+    display: inline-block;    
+}
+
+.vantagens {
+    display: inline;
+}
+
+.produtos {
+    width: 70%;
+    margin: auto 1%;
+    padding: 1vh 0;
+   
+}
+
+img {
+    width: 100px;
+}
+
+.flecha-background {
+    border-radius: 25px;
+    display: block;
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    display: inline-flex ; 
+   
+    margin: 21vw 46.3%;
+    position: fixed;
+
+}
+
+.flecha {
+    transform: rotate(-90deg);
+    border-radius: 25px;
+    margin: -6% 75%;    
+    position: fixed;
+
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    height: 42vh;
+    vertical-align: top;
+    margin: 0.5% 2.3%;
+    padding: 10px 15px;
+    box-sizing: border-box; /*Deixa o tamanho dos pixels dentro da porcentagem  */
+    border: 5px solid  #f80303;
+    border-radius: 10px;
+
+}
+
+.produtos li:hover {
+    border-color: #000000;  
+    box-shadow: 20px 20px 0 -3px rgb(46, 43, 43); 
+    transition: box-shadow 3s;    
+}
+
+.produtos li:hover p {
+    font-size: 1.5rem;
+    color: #000000;
+    transition: font-size 2s; 
+    margin-top: -10px;
+}
+
+.produto-descricao {
+    font-size: 1.2rem;
+    padding-top: 1.43rem;
+}
+
+.newsletter {    
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    height: 85vh;
+    vertical-align: top;
+    margin-top: 3.5vw;
+    margin-right: 14vh;
+    padding: 40px 20px;
+    box-sizing: border-box; 
+    border: 5px solid  #f80303;
+    border-radius: 10px;    
+}
+
+.input-container {
+    padding: 10px 10px;
+    font-weight : bolder;
+}
+
+label {
+    font-size: 3rem;
+
+}
+
+input {
+    box-shadow: 3px 0 0 3px hsla(245, 100%, 42 +
+     40%, 0.8);
+    size: 40px; 
+    font-size: 1.5rem;
+    border-radius: 5px;
+    height: 4rem;
+    box-shadow: 8px 8px 0 -3px rgb(46, 43, 43);
+}
+
+.btn-send {
+    height: 4rem;
+    width: 22rem;
+    margin-top: 30px;
+    border-color: #3498db;
+    color: rgb(15, 15, 15);
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 1000ms ease-in-out;
+    transition: all 1000ms ease-in-out;
+  }
+
+.btn-send:hover {
+    box-shadow: 0 0 10px 0 #000000 inset, 0 0 10px 4px #010d16;
+    background-color: red;
+    transition: all 1000ms ease-in-out;
+  }
